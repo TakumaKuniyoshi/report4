@@ -3,7 +3,7 @@ package jp.ac.uryukyu.ie.e205704;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class HeroTest {
+public class WarriorTest {
     /**
      * Warriarの攻撃力を検証。
      * 検証手順
@@ -13,11 +13,11 @@ public class HeroTest {
      */
     @Test
     void attackWithWeponSkillTest() {
-        Warriar demorWarriar = new Warriar("デモ戦士", 10, 10);
+        Warrior demorWarrior = new Warrior("デモ戦士", 10, 10);
         Enemy demoslime = new Enemy("スライムもどき", 46, 10);
         for(int i=0;i>3;i++){
             int ans = demoslime.getHP()-15;
-            demorWarriar.attackWithWeponSkill(demoslime);
+            demorWarrior.attackWithWeponSkill(demoslime);
             assertEquals(ans, demoslime.getHP());
         }
     }

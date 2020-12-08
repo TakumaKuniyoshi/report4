@@ -8,9 +8,9 @@ package jp.ac.uryukyu.ie.e205704;
  *  boolean dead; //敵の生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
  */
-public class Warriar extends Hero{
+public class Warrior extends Hero{
     double ozz = 1.5;
-    public Warriar (String name, int maximumHP, int attack) {
+    public Warrior (String name, int maximumHP, int attack) {
         super(name,maximumHP,attack);
     }
     public void attackWithWeponSkill(LivingThing enemy){
